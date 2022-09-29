@@ -1,4 +1,4 @@
-Responsive-Web![](https://img.shields.io/badge/Microverse-blueviolet)
+#Responsive-Web!#[](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Built With
 
@@ -19,7 +19,7 @@ An editor : VS code.
 
 ### Setup
 Clone this repository by using the command line : 
-`git clone https://https://github.com/Rikol137/Mobile-Portfolio-Final/`
+`git clone https://github.com/Rikol137/Responsive-Web/pull/1/`
 
 ## Authors
 
