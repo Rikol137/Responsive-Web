@@ -47,6 +47,19 @@ body {
   margin: 0 8px;
 }
 
+#logo {
+  animation: rotatetext 2s;
+}
+
+@keyframes rotatetext {
+  0%{
+    transform: rotate(-180deg);
+  }
+  
+  100% {
+    transform: rotate(180deg);
+  }
+}
 .presentation ul {
   display: flex;
   gap: 20px;
