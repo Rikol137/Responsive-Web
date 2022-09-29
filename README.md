@@ -1,4 +1,4 @@
-#Responsive-Web!#[](https://img.shields.io/badge/Microverse-blueviolet)
+**Responsive-Web**![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Built With
 
