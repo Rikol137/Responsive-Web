@@ -52,14 +52,15 @@ body {
 }
 
 @keyframes rotatetext {
-  0%{
+  0% {
     transform: rotate(-180deg);
   }
-  
+
   100% {
     transform: rotate(180deg);
   }
 }
+
 .presentation ul {
   display: flex;
   gap: 20px;
