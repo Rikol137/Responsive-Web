@@ -39,6 +39,14 @@ body {
   color: #7f8cff;
 }
 
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 #logo a {
   font-size: 18px;
   text-decoration: none;
@@ -65,6 +73,16 @@ body {
   display: flex;
   gap: 20px;
   list-style-type: none;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  list-style-type: none;
+  position: absolute;
+  top: 106px;
+  left: 28px;
 }
 
 #navbar ul {
@@ -101,23 +119,6 @@ body {
   right: 10.13%;
 }
 
-.mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  list-style-type: none;
-  position: absolute;
-  top: 106px;
-  left: 28px;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
 /* Headline section */
 
 .presentation {
