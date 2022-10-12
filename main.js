@@ -156,3 +156,37 @@ cardBtns.forEach((cardBtn, i) => {
     });
   });
 });
+
+const form = document.querySelector('#form');
+const emailInvalid = document.querySelector('.email-invalid');
+const errorMessage = document.querySelector('.error-message');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (form.elements.email.value.toLowerCase() === form.elements.email.value) {
+    form.submit();
+  } else {
+    form.elements.email.style.border = '3px solid red';
+    emailInvalid.textContent = `Email must be in lower case.Suggestion:   ${form.elements.email.value.toLowerCase()}`;
+    errorMessage.textContent = 'The form didn\'t get submitted, Please fix the errors above';
+    emailInvalid.style.display = 'block';
+    setTimeout(() => {
+      emailInvalid.style.opacity = '1';
+    }, 20);
+    errorMessage.style.display = 'block';
+
+    setTimeout(() => {
+      errorMessage.style.opacity = '1';
+    }, 20);
+    errorMessage.style.marginTop = '-40px';
+    form.reset();
+    form.elements.email.addEventListener('input', () => {
+      emailInvalid.style.display = 'none';
+      emailInvalid.style.opacity = '0';
+      errorMessage.style.display = 'none';
+      errorMessage.style.opacity = '0';
+      emailInvalid.textContent = '';
+      errorMessage.textContent = '';
+      form.elements.email.style.removeProperty('border');
+    });
+  }
+});
