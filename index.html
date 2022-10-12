@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h3 id="logo" class="content-padding"><a href="#intro">My Logo</a></h3>
+        <nav id="navbar">
+            <ul>
+                <li class="content-padding web"><a href="#works">Portfolio</a></li>
+                <li class="content-padding web"><a href="#about-myself">About</a></li>
+                <li class="content-padding web"><a href="#contact-form">Contact</a></li>
+                <li id="navbar-hamburger" class="content-padding mobile"><a href="#"><img src="images/menu-icon.png"
+                            class="pointer" alt="menu"></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <img src="images/cross.png" id="cross" class="pointer" alt="cross">
+            <ul>
+                <li><a class="nav-link" href="#works">Portfolio</a></li>
+                <li><a class="nav-link" href="#about-myself">About</a></li>
+                <li><a class="nav-link" href="#contact-form">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="headline" class="presentation">
+        <h1>I'm Rikol <br>Glad to see you!</h1>
+        <p>I &#39;m a software developer! I can help you build a product , feature or website Look through some of my
+            work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+            contact me.</p>
+        <a href="#">Let's connect</a>
+        <ul>
+            <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="#"><img src="images/medium.svg" alt="medium"></a></li>
+            <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
+            <li><a href="#"><img src="images/angellist.svg" alt="angelist"></a></li>
+        </ul>
+    </section>
+
+    <section id="works">
+    </section>
+
+    <section id="about-myself" class="presentation">
+        <div class="about-desc">
+            <h1>About <br>Myself</h1>
+            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
+                my
+                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+                contact
+                me.</p>
+            <a href="#">Let's connect</a>
+            <ul>
+                <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+                <li><a href="#"><img src="images/medium.svg" alt="medium"></a></li>
+                <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="images/angellist.svg" alt="angelist"></a></li>
+            </ul>
+            <div id="resume">
+                <button type="button" class="btn">Get My Resume</button>
+            </div>
+        </div>
+
+        <div class="skill-set">
+            <div class="language">
+                <div class="skill-info">
+                    <h3>Languages</h3>
+                    <img src="images/down-arrow.png" />
+                </div>
+
+                <ul class="skill-detail">
+                    <li>
+                        <img src="images/js.png" />
+                        <h3>JavaScript</h3>
+                    </li>
+                    <li>
+                        <img src="images/html.png" />
+                        <h3>HTML</h3>
+                    </li>
+                    <li>
+                        <img src="images/css.png" />
+                        <h3>CSS</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="framework">
+                <div class="skill-info border-bot">
+                    <h3>Frameworks</h3>
+                    <img src="images/right-arrow.png" />
+                </div>
+
+            </div>
+            <div class="skill">
+                <div class="skill-info border-bot">
+                    <h3>Skills</h3>
+                    <img src="images/right-arrow.png" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="contact-form">
+            <div class="form-container">
+                <h1>Contact me</h1>
+                <p>If you have an application you are interested in developing, a feature that you need built or a
+                    project
+                    that
+                    needs coding. I’d love to help with it </p>
+                <form id="form" action="https://formspree.io/f/xoqbdrjg" method="post" class="form-container form-padding">
+                    <input type="text" name="fullname" maxlength="30" placeholder="Enter your fullname" required />
+                    <input type="email"  name="email" placeholder="Enter your email" required />
+                    <span class="email-invalid"></span>
+                    <textarea placeholder="Write your message here" name="message" maxlength="500" required></textarea>
+                    <div class="submit-btn">
+                        <button class="btn" type="submit">Get In Touch</button>
+                    </div>
+                    <span class="error-message"> Error </span>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
