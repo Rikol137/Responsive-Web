@@ -1,7 +1,7 @@
 const projects = [
   {
     id: '0',
-    title: 'Tonic',
+    title: 'Hein',
     tags: ['Canopy', 'Back End dev', '2015'],
     imgsrc: 'images/project1.png',
     description: {
@@ -164,6 +164,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (form.elements.email.value.toLowerCase() === form.elements.email.value) {
     form.submit();
+    localStorage.removeItem('formData');
   } else {
     form.elements.email.style.border = '3px solid red';
     emailInvalid.textContent = `Email must be in lower case.Suggestion:   ${form.elements.email.value.toLowerCase()}`;
@@ -189,4 +190,28 @@ form.addEventListener('submit', (event) => {
       form.elements.email.style.removeProperty('border');
     });
   }
+});
+
+// LocalStorage
+const { elements } = form;
+const localObj = {};
+
+const localData = JSON.parse(localStorage.getItem('formData'));
+if (localData !== null) {
+  for (let i = 0; i < elements.length - 2; i += 1) {
+    elements[i].value = localData[elements[i].name];
+    localObj[elements[i].name] = elements[i].value;
+  }
+}
+
+for (let i = 0; i < elements.length - 2; i += 1) {
+  elements[i].addEventListener('input', () => {
+    localObj[elements[i].name] = elements[i].value;
+    localStorage.setItem('formData', JSON.stringify(localObj));
+  });
+}
+
+const resetBtn = document.querySelector('#reset-btn');
+resetBtn.addEventListener('click', () => {
+  localStorage.removeItem('formData');
 });
