@@ -1,7 +1,7 @@
 const projects = [
   {
     id: '0',
-    title: 'Hein',
+    title: 'Tonic',
     tags: ['Canopy', 'Back End dev', '2015'],
     imgsrc: 'images/project1.png',
     description: {
